@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/premchand11/or/internal/middleware"
-	"github.com/premchand11/or/internal/server"
+	"github.com/premchand11/open-router/internal/middleware"
+	"github.com/premchand11/open-router/internal/server"
 
 	"github.com/labstack/echo/v4"
 )

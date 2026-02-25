@@ -3,11 +3,11 @@ version: "3.9"
 services:
   postgres:
     image: postgres:16
-    container_name: or_postgres
+    container_name: open-router_postgres
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: or_gateway
+      POSTGRES_DB: open-router_gateway
     # ports:
     #   - "5432:5432"
     volumes:
@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.api
-    container_name: or_api
+    container_name: open-router_api
     ports:
       - "8080:8080"
     depends_on:
@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.worker
-    container_name: or_worker
+    container_name: open-router_worker
     depends_on:
       - postgres
       - redis

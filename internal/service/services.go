@@ -1,9 +1,9 @@
 package service
 
 import (
-	"github.com/premchand11/OR/internal/provider"
-	"github.com/premchand11/OR/internal/repository"
-	"github.com/premchand11/OR/internal/server"
+	"github.com/premchand11/open-router/internal/provider"
+	"github.com/premchand11/open-router/internal/repository"
+	"github.com/premchand11/open-router/internal/server"
 )
 
 type Services struct {

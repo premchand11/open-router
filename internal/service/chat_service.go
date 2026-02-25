@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/premchand11/or/internal/provider"
+	"github.com/premchand11/open-router/internal/provider"
 )
 
 type ChatService struct {

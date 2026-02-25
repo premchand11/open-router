@@ -5,11 +5,11 @@ import (
 
 	"github.com/labstack/echo/v4"
 	echoMiddleware "github.com/labstack/echo/v4/middleware"
-	"github.com/premchand11/or/internal/handler"
-	"github.com/premchand11/or/internal/middleware"
-	v1 "github.com/premchand11/or/internal/router/v1"
-	"github.com/premchand11/or/internal/server"
-	"github.com/premchand11/or/internal/service"
+	"github.com/premchand11/open-router/internal/handler"
+	"github.com/premchand11/open-router/internal/middleware"
+	v1 "github.com/premchand11/open-router/internal/router/v1"
+	"github.com/premchand11/open-router/internal/server"
+	"github.com/premchand11/open-router/internal/service"
 	"golang.org/x/time/rate"
 )
 

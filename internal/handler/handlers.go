@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/premchand11/or/internal/server"
-	"github.com/premchand11/or/internal/service"
+	"github.com/premchand11/open-router/internal/server"
+	"github.com/premchand11/open-router/internal/service"
 )
 
 type Handlers struct {

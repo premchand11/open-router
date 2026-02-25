@@ -125,11 +125,11 @@ func LoadConfig() (*Config, error) {
 	envVars := make(map[string]string)
 	for _, env := range os.Environ() {
 		parts := strings.SplitN(env, "=", 2)
-		if len(parts) == 2 && strings.HasPrefix(parts[0], "OR_") {
+		if len(parts) == 2 && strings.HasPrefix(parts[0], "OPEN-ROUTER_") {
 			key := parts[0]
 			value := parts[1]
 
-			configKey := strings.ToLower(strings.TrimPrefix(key, "OR_"))
+			configKey := strings.ToLower(strings.TrimPrefix(key, "OPEN-ROUTER_"))
 
 			if mapData, isMap := parseMapString(value); isMap {
 				for mapKey, mapValue := range mapData {
@@ -142,8 +142,8 @@ func LoadConfig() (*Config, error) {
 		}
 	}
 
-	err := k.Load(env.ProviderWithValue("OR_", ".", func(key, value string) (string, any) {
-		return strings.ToLower(strings.TrimPrefix(key, "OR_")), value
+	err := k.Load(env.ProviderWithValue("OPEN-ROUTER_", ".", func(key, value string) (string, any) {
+		return strings.ToLower(strings.TrimPrefix(key, "OPEN-ROUTER_")), value
 	}), nil)
 	if err != nil {
 		return nil, err
@@ -157,7 +157,7 @@ func LoadConfig() (*Config, error) {
 
 	err = k.Unmarshal("", mainConfig)
 	if err != nil {
-		return nil,fmt.Errorf("could not unmarshal main config:%w",err)
+		return nil, fmt.Errorf("could not unmarshal main config:%w", err)
 	}
 
 	validate := validator.New()
@@ -173,11 +173,11 @@ func LoadConfig() (*Config, error) {
 		mainConfig.Observability = DefaultObservabilityConfig()
 	}
 
-	mainConfig.Observability.ServiceName = "OR"
+	mainConfig.Observability.ServiceName = "open-router"
 	mainConfig.Observability.Environment = mainConfig.Primary.Env
 
 	if err := mainConfig.Observability.Validate(); err != nil {
-		return nil,fmt.Errorf("invalid observability config:%w",err)
+		return nil, fmt.Errorf("invalid observability config:%w", err)
 	}
 
 	return mainConfig, nil

@@ -18,7 +18,6 @@ type LoggingConfig struct {
 	SlowQueryThreshold time.Duration `koanf:"slow_query_threshold"`
 }
 
-
 type HealthChecksConfig struct {
 	Enabled  bool          `koanf:"enabled"`
 	Interval time.Duration `koanf:"interval" validate:"min=1s"`
@@ -28,7 +27,7 @@ type HealthChecksConfig struct {
 
 func DefaultObservabilityConfig() *ObservabilityConfig {
 	return &ObservabilityConfig{
-		ServiceName: "OR",
+		ServiceName: "open-router",
 		Environment: "development",
 		Logging: LoggingConfig{
 			Level:              "info",

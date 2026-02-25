@@ -1,17 +1,3 @@
-// package provider
-
-// import (
-// 	"github.com/premchand11/or/internal/config"
-// 	"github.com/rs/zerolog"
-// )
-
-// type Registry struct {
-// 	// will hold providers later
-// }
-
-//	func NewRegistry(cfg *config.Config, log *zerolog.Logger) *Registry {
-//		return &Registry{}
-//	}
 package provider
 
 import (

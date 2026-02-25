@@ -6,9 +6,9 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/newrelic/go-agent/v3/integrations/nrpkgerrors"
 	"github.com/newrelic/go-agent/v3/newrelic"
-	"github.com/premchand11/or/internal/middleware"
-	"github.com/premchand11/or/internal/server"
-	"github.com/premchand11/or/internal/validation"
+	"github.com/premchand11/open-router/internal/middleware"
+	"github.com/premchand11/open-router/internal/server"
+	"github.com/premchand11/open-router/internal/validation"
 )
 
 // Handler provides base functionality for all handlers

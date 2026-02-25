@@ -1,7 +1,7 @@
 package rate_limit
 
 import (
-	"github.com/premchand11/or/internal/config"
+	"github.com/premchand11/open-router/internal/config"
 	"github.com/redis/go-redis/v9"
 )
 

@@ -8,14 +8,14 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/premchand11/or/internal/config"
-	"github.com/premchand11/or/internal/database"
-	"github.com/premchand11/or/internal/handler"
-	"github.com/premchand11/or/internal/logger"
-	"github.com/premchand11/or/internal/repository"
-	"github.com/premchand11/or/internal/router"
-	"github.com/premchand11/or/internal/server"
-	"github.com/premchand11/or/internal/service"
+	"github.com/premchand11/open-router/internal/config"
+	"github.com/premchand11/open-router/internal/database"
+	"github.com/premchand11/open-router/internal/handler"
+	"github.com/premchand11/open-router/internal/logger"
+	"github.com/premchand11/open-router/internal/repository"
+	"github.com/premchand11/open-router/internal/router"
+	"github.com/premchand11/open-router/internal/server"
+	"github.com/premchand11/open-router/internal/service"
 )
 
 const DefaultContextTimeout = 30

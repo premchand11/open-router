@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/premchand11/or/internal/config"
-	"github.com/premchand11/or/internal/database"
-	loggerPkg "github.com/premchand11/or/internal/logger"
+	"github.com/premchand11/open-router/internal/config"
+	"github.com/premchand11/open-router/internal/database"
+	loggerPkg "github.com/premchand11/open-router/internal/logger"
 	"github.com/redis/go-redis/v9"
 	"github.com/rs/zerolog"
 )

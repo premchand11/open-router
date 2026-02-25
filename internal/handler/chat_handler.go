@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/premchand11/or/internal/provider"
-	"github.com/premchand11/or/internal/service"
+	"github.com/premchand11/open-router/internal/provider"
+	"github.com/premchand11/open-router/internal/service"
 )
 
 type ChatHandler struct {

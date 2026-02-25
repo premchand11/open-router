@@ -1,7 +1,7 @@
 package router
 
 import (
-	"github.com/premchand11/or/internal/handler"
+	"github.com/premchand11/open-router/internal/handler"
 
 	"github.com/labstack/echo/v4"
 )

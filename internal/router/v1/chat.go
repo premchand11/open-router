@@ -2,8 +2,8 @@ package v1
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/premchand11/or/internal/handler"
-	"github.com/premchand11/or/internal/middleware"
+	"github.com/premchand11/open-router/internal/handler"
+	"github.com/premchand11/open-router/internal/middleware"
 )
 
 func registerChatRoutes(r *echo.Group, h *handler.ChatHandler, auth *middleware.AuthMiddleware) {
